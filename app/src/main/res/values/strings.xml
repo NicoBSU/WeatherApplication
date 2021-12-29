@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="weather">Weather</string>
+    <string name="minsk">Minsk</string>
+    <string name="newYork">New York</string>
+    <string name="london">London</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="rome">Rome</string>
+    <string name="paris">Paris</string>
+    <string name="hongKong">Hong Kong</string>
+    <string name="berlin">Berlin</string>
+    <string name="moscow">Moscow</string>
+</resources>

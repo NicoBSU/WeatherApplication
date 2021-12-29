@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/weather"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tokyoWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/tokyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parisWeatherButton" />
+
+    <Button
+        android:id="@+id/romeWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/rome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tokyoWeatherButton" />
+
+    <Button
+        android:id="@+id/parisWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/paris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherText" />
+
+    <Button
+        android:id="@+id/minskWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/minsk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/londonWeatherButton" />
+
+    <Button
+        android:id="@+id/newYorkWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/newYork"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minskWeatherButton" />
+
+    <Button
+        android:id="@+id/londonWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/london"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherText" />
+
+    <Button
+        android:id="@+id/moscowWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/moscow"
+        app:layout_constraintEnd_toStartOf="@+id/parisWeatherButton"
+        app:layout_constraintStart_toEndOf="@+id/londonWeatherButton"
+        app:layout_constraintTop_toBottomOf="@+id/weatherText" />
+
+    <Button
+        android:id="@+id/hongKongWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/hongKong"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tokyoWeatherButton"
+        app:layout_constraintStart_toEndOf="@+id/minskWeatherButton"
+        app:layout_constraintTop_toBottomOf="@+id/moscowWeatherButton" />
+
+    <Button
+        android:id="@+id/berlinWeatherButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/berlin"
+        app:layout_constraintEnd_toStartOf="@+id/romeWeatherButton"
+        app:layout_constraintStart_toEndOf="@+id/newYorkWeatherButton"
+        app:layout_constraintTop_toBottomOf="@+id/hongKongWeatherButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

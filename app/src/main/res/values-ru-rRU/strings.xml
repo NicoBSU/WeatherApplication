@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="weather">Погода</string>
+    <string name="minsk">Минск</string>
+    <string name="newYork">Нью Йорк</string>
+    <string name="london">Лондон</string>
+    <string name="tokyo">Токио</string>
+    <string name="rome">Рим</string>
+    <string name="paris">Париж</string>
+    <string name="hongKong">Гонконг</string>
+    <string name="berlin">Берлин</string>
+    <string name="moscow">Москва</string>
+</resources>
