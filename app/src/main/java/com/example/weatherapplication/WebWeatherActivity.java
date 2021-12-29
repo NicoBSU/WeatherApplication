@@ -13,9 +13,9 @@ public class WebWeatherActivity extends AppCompatActivity {
             "<a class=\"weatherwidget-io\" href=\"", //link to forecast
             "\" data-label_1=\"", //city title
             "\" data-label_2=\"WEATHER\" data-theme=\"original\" >", //city weather
-            "</a>\n",
-            "<script>\n",
-            "!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');\n",
+            "</a>",
+            "<script>",
+            "!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');",
             "</script>"
     };
 
@@ -24,10 +24,11 @@ public class WebWeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_weather);
 
-        this.weatherView = this.findViewById(R.id.weatherView);
-        weatherView.getSettings().setJavaScriptEnabled(true);
+
         Intent intent = getIntent();
         String city = intent.getStringExtra("city");
+        this.weatherView = this.findViewById(R.id.weatherView);
+        weatherView.getSettings().setJavaScriptEnabled(true);
 
         switch (city){
             case "minsk":{
